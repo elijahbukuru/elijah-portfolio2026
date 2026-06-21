@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Elijah Bukuru — Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio för Elijah Bukuru, student inom interaktiva medier och webbteknologier vid Linnéuniversitetet."
+  />
+
+  <link rel="icon" type="image/png" href="images/elijahNewLogo.png" />
+  <link rel="apple-touch-icon" href="images/elijahNewLogo.png" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+            <a href="#home" class="brand">
+              <span class="brand-logo">
+                <img src="images/elijahNewLogo.png" alt="Elijah Bukuru logo" />
+              </span>
+              <span class="brand-name">Elijah Bukuru</span>
+            </a>
+
+        <button class="menu-button" id="menuButton" aria-label="Öppna meny">
+          Meny
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#about">Om mig</a>
+          <a href="#projects">Projekt</a>
+          <a href="#skills">Kompetenser</a>
+          <a href="#tools">Verktyg</a>
+          <a href="#contact">Kontakt</a>
+          <a class="cv-button" href="cv-elijah-abrahams-bukuru.pdf" download>
+            Ladda ner mitt CV
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Portfolio / Praktik HT26</p>
+
+          <h1>Digital design, frontend och tydliga användarupplevelser.</h1>
+
+          <p class="hero-lead">
+            Jag heter Elijah och studerar Interaktiva medier och webbteknologier
+            vid Linnéuniversitetet i Växjö. Jag söker praktik under HT26, från
+            vecka 46 till vecka 3.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="button primary-button">Se projekt</a>
+            <a href="#contact" class="button secondary-button">Kontakta mig</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="image-wrap">
+            <img src="images/elijah-profil-img.jpeg" alt="Profilbild på Elijah" />
+          </div>
+
+          <div class="profile-info">
+            <div>
+              <span>Fokus</span>
+              <strong>Frontend · UX/UI · Digital design</strong>
+            </div>
+            <div>
+              <span>Plats</span>
+              <strong>Växjö, Stockholm / Sverige</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-strip reveal">
+        <p>
+          Jag gillar att skapa digitala upplevelser som är tydliga, moderna och
+          enkla att förstå — med en bra balans mellan design, teknik och
+          kommunikation.
+        </p>
+      </section>
+
+      <section class="section about reveal" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">01 / Om mig</p>
+          <h2>Nyfiken, visuell och tekniskt driven.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="text-card">
+            <p>
+              Jag studerar Interaktiva medier och webbteknologier vid
+              Linnéuniversitetet i Växjö. Jag är intresserad av hur design,
+              teknik och användarupplevelse kan samspela för att skapa bättre
+              digitala produkter.
+            </p>
+          </article>
+
+          <article class="text-card">
+            <p>
+              Under praktiken vill jag bidra med energi, nyfikenhet och
+              formkänsla, samtidigt som jag utvecklas inom frontend, UX/UI,
+              contentproduktion och digital design.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects reveal" id="projects">
+        <div class="section-heading project-heading">
+          <div>
+            <p class="eyebrow">02 / Projekt</p>
+            <h2>Utvalda projekt</h2>
+          </div>
+
+          <div class="project-controls">
+            <button id="prevProject">Förra</button>
+            <button id="nextProject">Nästa</button>
+          </div>
+        </div>
+
+        <article class="project-card" id="projectCard">
+          <div class="project-number">
+            <span id="projectNumber">01</span>
+            <small id="projectTotal">/ 07</small>
+          </div>
+
+          <div class="project-content">
+            <p class="project-type" id="projectType">PWA / Mikrointeraktion</p>
+
+            <h3 id="projectTitle">DogPlay</h3>
+
+            <p id="projectDescription">
+              <!-- En mobilanpassad PWA-app utvecklad inom ramen för mikrointeraktion.
+              Fokus låg på små interaktiva detaljer, visuell feedback och en
+              tydlig användarupplevelse. -->
+            </p>
+
+            <div class="tags" id="projectTags">
+              <!-- <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PWA</span>
+              <span>Mikrointeraktion</span>
+              <span>Grafisk design</span>
+              <span>REST API</span> -->
+            </div>
+          </div>
+
+          <a
+            class="project-link"
+            id="projectLink"
+            href="https://dogplay.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Öppna projekt ↗
+          </a>
+        </article>
+      </section>
+
+      <section class="section skills reveal" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">03 / Kompetenser</p>
+          <h2>Områden jag vill utvecklas inom.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, responsiv design och interaktiva gränssnitt.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>UX/UI</h3>
+            <p>Användarflöden, wireframes, prototyper, struktur och tydliga gränssnitt.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Digital design</h3>
+            <p>Grafisk form, visuell kommunikation, content och medieproduktion.</p>
+          </div>
+        </div>
+
+        <div class="tags big-tags animated-tags">
+          <span>Junior Frontend</span>
+          <span>UX Design</span>
+          <span>UX/UI-design</span>
+          <span>Grafisk design</span>
+          <span>Content production</span>
+          <span>Mediaproduktion</span>
+          <span>Webbanalys</span>
+          <span>Creative technology</span>
+        </div>
+      </section>
+
+      <section class="section tools reveal" id="tools">
+        <div class="section-heading">
+          <p class="eyebrow">04 / Verktyg & tekniker</p>
+          <h2>Program och tekniker jag använder.</h2>
+        </div>
+
+        <div class="tools-grid">
+          <article class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML ikon" />
+            <span>HTML</span>
+          </article>
+
+          <article class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS ikon" />
+            <span>CSS</span>
+          </article>
+
+          <article class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript ikon" />
+            <span>JavaScript</span>
+          </article>
+
+          <article class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Adobe Illustrator ikon" />
+            <span>Illustrator</span>
+          </article>
+
+          <article class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Adobe Photoshop ikon" />
+            <span>Photoshop</span>
+          </article>
+
+          <article class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" alt="Adobe Premiere Pro ikon" />
+            <span>Premiere Pro</span>
+          </article>
+
+          <article class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD ikon" />
+            <span>Adobe XD</span>
+          </article>
+
+          <article class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma ikon" />
+            <span>Figma</span>
+          </article>
+
+          <article class="tool-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg" alt="Maya 3D ikon" />
+            <span>Maya 3D</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact reveal" id="contact">
+        <div>
+          <p class="eyebrow">05 / Kontakt</p>
+          <h2>Vill du prata praktik eller projekt?</h2>
+          <p>
+            Jag söker en praktikplats där jag får växa inom frontend, UX/UI,
+            content, digital design och medieteknik.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:Bukulu123@gmail.com">Bukulu123@gmail.com</a>
+          <a href="cv-elijah-abrahams-bukuru.pdf" download>Ladda ner mitt CV</a>
+          <span>Växjö/Stockholm/Sverige</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Elijah Bukuru</p>
+          <p> Medieteknik · Linnéuniversitetet</p>
+    </footer>
+
+    <button class="scroll-top-button" id="scrollTopButton" aria-label="Scrolla till toppen">
+      ↑
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
