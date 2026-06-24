@@ -62,7 +62,7 @@ const projects = [
     title: "Northern Guardians",
     description:
       "Ett spelprojekt där fokus ligger på rörelse, skjutmekanik, fiender, nivåer och en tydlig spelstruktur med JavaScript.",
-    tags: ["JavaScript", "Game design", "Canvas", "node.js" , "Electron", "Git" , "pixel art" , "Arcade"],
+    tags: ["JavaScript", "Game design", "Canvas", "node.js" , "Electron", "Git" , "pixel art" , "Arcade" , "OOP"],
     link: "https://northernguardians.netlify.app/",
   },
   {
@@ -152,11 +152,22 @@ if (prevProject && nextProject) {
 
 const scrollTopButton = document.getElementById("scrollTopButton");
 
+// 1. Kontrollera om JS hittar knappen i din HTML
+if (scrollTopButton) {
+  console.log("✅ Framgång: JS hittade scrollTopButton i HTML-koden!");
+} else {
+  console.log("❌ Fel: JS kan INTE hitta något element med id='scrollTopButton'. Dubbelkolla din HTML!");
+}
+
 function toggleScrollTopButton() {
   if (!scrollTopButton) return;
 
+  // 2. Skriver ut din nuvarande scroll-position varje gång du scrollar
+  console.log("Du scrollar! Nuvarande position (scrollY) är:", Math.round(window.scrollY));
+
   if (window.scrollY > 700) {
     scrollTopButton.classList.add("visible");
+    console.log("🚀 Positionen är över 700px! lade till klassen '.visible'");
   } else {
     scrollTopButton.classList.remove("visible");
   }
@@ -167,9 +178,12 @@ toggleScrollTopButton();
 
 if (scrollTopButton) {
   scrollTopButton.addEventListener("click", () => {
+    console.log("👉 Du klickade på knappen! Scrollar till toppen...");
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   });
 }
+
+
